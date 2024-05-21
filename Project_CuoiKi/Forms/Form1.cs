@@ -16,5 +16,10 @@ namespace Project_CuoiKi
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Class.functions.ketnoi();
+        }
     }
 }
