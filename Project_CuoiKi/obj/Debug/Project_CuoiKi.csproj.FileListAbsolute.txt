@@ -8,3 +8,6 @@ D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.c
 D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CoreCompileInputs.cache
 D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
 D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
+D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\bin\Debug\Guna.UI2.dll
+D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.frmdangnhap.resources
+D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CopyComplete
