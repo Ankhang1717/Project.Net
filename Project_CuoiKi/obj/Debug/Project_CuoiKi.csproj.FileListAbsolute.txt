@@ -11,3 +11,16 @@ D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.p
 D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\bin\Debug\Guna.UI2.dll
 D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.frmdangnhap.resources
 D:\Kì 2 Năm 3\C# code\Project_CuoiKi\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CopyComplete
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe.config
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.pdb
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\bin\Debug\Guna.UI2.dll
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.AssemblyReference.cache
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.Form1.resources
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.frmdangnhap.resources
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.Properties.Resources.resources
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.GenerateResource.cache
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CoreCompileInputs.cache
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CopyComplete
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
