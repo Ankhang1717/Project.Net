@@ -1,0 +1,14 @@
+D:\BTL.NET\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe.config
+D:\BTL.NET\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe
+D:\BTL.NET\Project_CuoiKi\bin\Debug\Project_CuoiKi.pdb
+D:\BTL.NET\Project_CuoiKi\bin\Debug\Guna.UI2.dll
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.AssemblyReference.cache
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.Form1.resources
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.Forms.FormChung.resources
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.frmdangnhap.resources
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.Properties.Resources.resources
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.GenerateResource.cache
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CoreCompileInputs.cache
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_.82AA44B0.Up2Date
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
+D:\BTL.NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb

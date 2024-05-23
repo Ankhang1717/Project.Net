@@ -106,5 +106,29 @@
   <ItemGroup>
     <None Include="Resources\icons8-menu-50 %283%29 %284%29 %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-room-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employees-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supplies-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maintenance-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
