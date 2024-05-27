@@ -55,6 +55,12 @@
     <Compile Include="All User Control\UC_Danhsachmay.Designer.cs">
       <DependentUpon>UC_Danhsachmay.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_Nhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Nhanvien.Designer.cs">
+      <DependentUpon>UC_Nhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_Phong.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="All User Control\UC_Danhsachmay.resx">
       <DependentUpon>UC_Danhsachmay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_Nhanvien.resx">
+      <DependentUpon>UC_Nhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Phong.resx">
       <DependentUpon>UC_Phong.cs</DependentUpon>
