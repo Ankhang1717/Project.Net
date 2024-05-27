@@ -31,17 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelMoving = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnThoat = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnBaotri = new Guna.UI2.WinForms.Guna2Button();
@@ -52,21 +54,21 @@
             this.btnBaocao = new Guna.UI2.WinForms.Guna2Button();
             this.btnNCC = new Guna.UI2.WinForms.Guna2Button();
             this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Nhanvien1 = new Project_CuoiKi.All_User_Control.uC_Nhanvien();
             this.uC_Phong1 = new Project_CuoiKi.All_User_Control.UC_Phong();
             this.panel2.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            this.guna2Panel6.SuspendLayout();
-            this.guna2Panel7.SuspendLayout();
-            this.guna2Panel8.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2Panel8.SuspendLayout();
+            this.guna2Panel7.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -80,20 +82,92 @@
             this.panel2.Controls.Add(this.guna2Panel4);
             this.panel2.Controls.Add(this.guna2Panel3);
             this.panel2.Controls.Add(this.guna2Panel2);
-            this.panel2.Location = new System.Drawing.Point(0, 34);
+            this.panel2.Location = new System.Drawing.Point(0, 42);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(283, 1069);
+            this.panel2.Size = new System.Drawing.Size(318, 1336);
             this.panel2.TabIndex = 4;
+            // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.Controls.Add(this.btnBaotri);
+            this.guna2Panel9.Location = new System.Drawing.Point(0, 738);
+            this.guna2Panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel9.TabIndex = 17;
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.Controls.Add(this.btnThietbi);
+            this.guna2Panel8.Location = new System.Drawing.Point(1, 631);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel8.TabIndex = 17;
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.Controls.Add(this.btnTimkiem);
+            this.guna2Panel7.Location = new System.Drawing.Point(0, 525);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel7.TabIndex = 17;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.Controls.Add(this.btnNhanvien);
+            this.guna2Panel6.Location = new System.Drawing.Point(1, 419);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel6.TabIndex = 17;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.Controls.Add(this.btnHoadon);
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 312);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel5.TabIndex = 17;
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Controls.Add(this.btnBaocao);
+            this.guna2Panel4.Location = new System.Drawing.Point(1, 206);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel4.TabIndex = 17;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.btnNCC);
+            this.guna2Panel3.Location = new System.Drawing.Point(1, 100);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel3.TabIndex = 17;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.btnPhong);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(317, 99);
+            this.guna2Panel2.TabIndex = 16;
             // 
             // PanelMoving
             // 
             this.PanelMoving.BackColor = System.Drawing.Color.White;
             this.PanelMoving.FillColor = System.Drawing.Color.DarkSlateBlue;
-            this.PanelMoving.Location = new System.Drawing.Point(283, 34);
+            this.PanelMoving.Location = new System.Drawing.Point(318, 42);
             this.PanelMoving.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelMoving.Name = "PanelMoving";
-            this.PanelMoving.Size = new System.Drawing.Size(10, 81);
+            this.PanelMoving.Size = new System.Drawing.Size(11, 101);
             this.PanelMoving.TabIndex = 5;
             // 
             // guna2Panel1
@@ -105,91 +179,43 @@
             this.guna2Panel1.Controls.Add(this.btnThoat);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1942, 35);
+            this.guna2Panel1.Size = new System.Drawing.Size(1946, 44);
             this.guna2Panel1.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 3);
+            this.label1.Location = new System.Drawing.Point(52, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 28);
+            this.label1.Size = new System.Drawing.Size(151, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "TINY CYBER";
             // 
-            // guna2Panel2
+            // panel1
             // 
-            this.guna2Panel2.Controls.Add(this.btnPhong);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 2);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel2.TabIndex = 16;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.uC_Nhanvien1);
+            this.panel1.Controls.Add(this.uC_Phong1);
+            this.panel1.Location = new System.Drawing.Point(369, 114);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1768, 1248);
+            this.panel1.TabIndex = 7;
             // 
-            // guna2Panel3
+            // guna2Elipse1
             // 
-            this.guna2Panel3.Controls.Add(this.btnNCC);
-            this.guna2Panel3.Location = new System.Drawing.Point(1, 80);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel3.TabIndex = 17;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.Controls.Add(this.btnBaocao);
-            this.guna2Panel4.Location = new System.Drawing.Point(1, 165);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel4.TabIndex = 17;
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.Controls.Add(this.btnHoadon);
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 250);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel5.TabIndex = 17;
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.Controls.Add(this.btnNhanvien);
-            this.guna2Panel6.Location = new System.Drawing.Point(1, 335);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel6.TabIndex = 17;
-            // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.Controls.Add(this.btnTimkiem);
-            this.guna2Panel7.Location = new System.Drawing.Point(0, 420);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel7.TabIndex = 17;
-            // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.Controls.Add(this.btnThietbi);
-            this.guna2Panel8.Location = new System.Drawing.Point(1, 505);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel8.TabIndex = 17;
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.Controls.Add(this.btnBaotri);
-            this.guna2Panel9.Location = new System.Drawing.Point(0, 590);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel9.TabIndex = 17;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Project_CuoiKi.Properties.Resources.icons8_menu_50__3___4___2_;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 8);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -206,11 +232,11 @@
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageSize = new System.Drawing.Size(27, 27);
-            this.btnThoat.Location = new System.Drawing.Point(1894, 3);
+            this.btnThoat.Location = new System.Drawing.Point(1892, 4);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnThoat.Size = new System.Drawing.Size(45, 28);
+            this.btnThoat.Size = new System.Drawing.Size(51, 35);
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
@@ -231,7 +257,7 @@
             this.btnBaotri.Location = new System.Drawing.Point(1, 2);
             this.btnBaotri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaotri.Name = "btnBaotri";
-            this.btnBaotri.Size = new System.Drawing.Size(282, 79);
+            this.btnBaotri.Size = new System.Drawing.Size(317, 99);
             this.btnBaotri.TabIndex = 15;
             this.btnBaotri.Text = "Bảo trì";
             this.btnBaotri.Click += new System.EventHandler(this.btnBaotri_Click);
@@ -253,7 +279,7 @@
             this.btnThietbi.Location = new System.Drawing.Point(0, 2);
             this.btnThietbi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThietbi.Name = "btnThietbi";
-            this.btnThietbi.Size = new System.Drawing.Size(282, 79);
+            this.btnThietbi.Size = new System.Drawing.Size(317, 99);
             this.btnThietbi.TabIndex = 5;
             this.btnThietbi.Text = "Thiết bị";
             // 
@@ -274,7 +300,7 @@
             this.btnTimkiem.Location = new System.Drawing.Point(1, 2);
             this.btnTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(282, 79);
+            this.btnTimkiem.Size = new System.Drawing.Size(317, 99);
             this.btnTimkiem.TabIndex = 14;
             this.btnTimkiem.Text = "Tìm kiếm";
             // 
@@ -295,9 +321,10 @@
             this.btnNhanvien.Location = new System.Drawing.Point(-1, 2);
             this.btnNhanvien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNhanvien.Name = "btnNhanvien";
-            this.btnNhanvien.Size = new System.Drawing.Size(282, 79);
+            this.btnNhanvien.Size = new System.Drawing.Size(317, 99);
             this.btnNhanvien.TabIndex = 15;
             this.btnNhanvien.Text = "Nhân viên";
+            this.btnNhanvien.Click += new System.EventHandler(this.btnNhanvien_Click);
             // 
             // btnHoadon
             // 
@@ -316,7 +343,7 @@
             this.btnHoadon.Location = new System.Drawing.Point(1, 2);
             this.btnHoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHoadon.Name = "btnHoadon";
-            this.btnHoadon.Size = new System.Drawing.Size(282, 79);
+            this.btnHoadon.Size = new System.Drawing.Size(317, 99);
             this.btnHoadon.TabIndex = 15;
             this.btnHoadon.Text = "Hóa đơn";
             // 
@@ -337,7 +364,7 @@
             this.btnBaocao.Location = new System.Drawing.Point(0, 1);
             this.btnBaocao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaocao.Name = "btnBaocao";
-            this.btnBaocao.Size = new System.Drawing.Size(282, 79);
+            this.btnBaocao.Size = new System.Drawing.Size(317, 99);
             this.btnBaocao.TabIndex = 13;
             this.btnBaocao.Text = "Báo cáo";
             // 
@@ -355,10 +382,10 @@
             this.btnNCC.Image = global::Project_CuoiKi.Properties.Resources.icons8_supplies_64__1_;
             this.btnNCC.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnNCC.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnNCC.Location = new System.Drawing.Point(0, 3);
+            this.btnNCC.Location = new System.Drawing.Point(0, 4);
             this.btnNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNCC.Name = "btnNCC";
-            this.btnNCC.Size = new System.Drawing.Size(282, 79);
+            this.btnNCC.Size = new System.Drawing.Size(317, 99);
             this.btnNCC.TabIndex = 15;
             this.btnNCC.Text = "Nhà cung cấp";
             // 
@@ -379,36 +406,35 @@
             this.btnPhong.Location = new System.Drawing.Point(1, -1);
             this.btnPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Size = new System.Drawing.Size(282, 79);
+            this.btnPhong.Size = new System.Drawing.Size(317, 99);
             this.btnPhong.TabIndex = 15;
             this.btnPhong.Text = "Phòng";
             this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
             // 
-            // panel1
+            // guna2Elipse2
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.uC_Phong1);
-            this.panel1.Location = new System.Drawing.Point(328, 91);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1572, 999);
-            this.panel1.TabIndex = 7;
+            this.guna2Elipse2.TargetControl = this;
             // 
-            // guna2Elipse1
+            // uC_Nhanvien1
             // 
-            this.guna2Elipse1.TargetControl = this;
+            this.uC_Nhanvien1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_Nhanvien1.Name = "uC_Nhanvien1";
+            this.uC_Nhanvien1.Size = new System.Drawing.Size(1768, 1249);
+            this.uC_Nhanvien1.TabIndex = 1;
             // 
             // uC_Phong1
             // 
-            this.uC_Phong1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_Phong1.Location = new System.Drawing.Point(-1, -2);
+            this.uC_Phong1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.uC_Phong1.Name = "uC_Phong1";
-            this.uC_Phong1.Size = new System.Drawing.Size(1572, 999);
+            this.uC_Phong1.Size = new System.Drawing.Size(1768, 1249);
             this.uC_Phong1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.ClientSize = new System.Drawing.Size(1946, 1106);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.PanelMoving);
@@ -421,18 +447,18 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
+            this.guna2Panel9.ResumeLayout(false);
+            this.guna2Panel8.ResumeLayout(false);
+            this.guna2Panel7.ResumeLayout(false);
+            this.guna2Panel6.ResumeLayout(false);
+            this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel5.ResumeLayout(false);
-            this.guna2Panel6.ResumeLayout(false);
-            this.guna2Panel7.ResumeLayout(false);
-            this.guna2Panel8.ResumeLayout(false);
-            this.guna2Panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -463,6 +489,8 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private All_User_Control.UC_Phong uC_Phong1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private All_User_Control.uC_Nhanvien uC_Nhanvien1;
     }
 }
 

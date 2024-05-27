@@ -23,6 +23,7 @@ namespace Project_CuoiKi
             Class.functions.ketnoi();
             uC_Phong1.Visible = false;
             btnPhong.PerformClick();
+            uC_Nhanvien1.Visible = false;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -37,9 +38,17 @@ namespace Project_CuoiKi
 
         private void btnPhong_Click(object sender, EventArgs e)
         {
-            PanelMoving.Top = btnPhong.Top + 50;
+            PanelMoving.Top = btnPhong.Top + 30;
             uC_Phong1.Visible = true;
             uC_Phong1.BringToFront();
+        }
+
+        private void btnNhanvien_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Top = btnNhanvien.Top + 298;
+            uC_Nhanvien1.Visible = true;
+            uC_Nhanvien1.BringToFront();
+
         }
     }
 }
