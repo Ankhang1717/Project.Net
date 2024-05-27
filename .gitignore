@@ -1,3 +1,8 @@
 .vs\Project_CuoiKi\.vs\Project_CuoiKi\v17\.suo
 Project_CuoiKi\bin\
 Project_CuoiKi\obj\
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
