@@ -55,7 +55,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1112, 550);
             this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // labelError
             // 
@@ -66,6 +65,7 @@
             this.labelError.Size = new System.Drawing.Size(179, 16);
             this.labelError.TabIndex = 6;
             this.labelError.Text = "Error username or password!";
+            this.labelError.Visible = false;
             // 
             // btnLogin
             // 

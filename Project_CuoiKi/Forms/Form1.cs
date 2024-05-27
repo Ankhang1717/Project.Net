@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_CuoiKi.All_User_Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,25 @@ namespace Project_CuoiKi
         private void Form1_Load(object sender, EventArgs e)
         {
             Class.functions.ketnoi();
+            uC_Phong1.Visible = false;
+            btnPhong.PerformClick();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBaotri_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPhong_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Top = btnPhong.Top + 50;
+            uC_Phong1.Visible = true;
+            uC_Phong1.BringToFront();
         }
     }
 }

@@ -15,13 +15,8 @@ namespace Project_CuoiKi
         public frmdangnhap()
         {
             InitializeComponent();
-            labelError.Visible = false;
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
