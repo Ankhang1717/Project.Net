@@ -175,5 +175,10 @@ namespace Project_CuoiKi.All_User_Control
                 this.Parent.Controls.Remove(this);
             }
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

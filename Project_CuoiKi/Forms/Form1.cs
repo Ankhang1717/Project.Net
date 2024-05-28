@@ -54,7 +54,7 @@ namespace Project_CuoiKi
 
         private void btnThietbi_Click(object sender, EventArgs e)
         {
-            PanelMoving.Top = btnThietbi.Top + 200;
+            PanelMoving.Top = btnThietbi.Top + 367;
             uC_ThemThietBi1.Visible = true;
             uC_ThemThietBi1.BringToFront();
         }

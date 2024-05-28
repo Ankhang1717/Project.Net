@@ -64,9 +64,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(31, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 46);
+            this.label1.Size = new System.Drawing.Size(205, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nhân viên";
+            this.label1.Text = "NHÂN VIÊN";
             // 
             // tabControl1
             // 
@@ -402,6 +402,7 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "  Xóa Nhân Viên  ";
             this.tabPage3.UseVisualStyleBackColor = true;
+//            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // guna2Elipse1
             // 

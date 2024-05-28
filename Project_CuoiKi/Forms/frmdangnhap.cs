@@ -15,12 +15,14 @@ namespace Project_CuoiKi
         public frmdangnhap()
         {
             InitializeComponent();
+            this.AcceptButton = btnLogin;
         }
 
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -37,6 +39,11 @@ namespace Project_CuoiKi
                 labelError.Visible = true;
                 txtPassword.Clear();
             }
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

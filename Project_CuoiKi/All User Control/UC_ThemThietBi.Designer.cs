@@ -67,11 +67,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 28.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(22, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 57);
+            this.label1.Size = new System.Drawing.Size(417, 62);
             this.label1.TabIndex = 1;
             this.label1.Text = "QUẢN LÝ THIẾT BỊ";
             // 
@@ -118,6 +118,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thiết Bị";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // btnboqua
             // 

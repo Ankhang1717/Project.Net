@@ -31,12 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBaotri = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnThietbi = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnTimkiem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnNhanvien = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -53,14 +51,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnThoat = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_ThemThietBi1 = new Project_CuoiKi.All_User_Control.UC_ThemThietBi();
             this.uC_Nhanvien1 = new Project_CuoiKi.All_User_Control.uC_Nhanvien();
             this.uC_Phong1 = new Project_CuoiKi.All_User_Control.UC_Phong();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2.SuspendLayout();
-            this.guna2Panel9.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -76,7 +73,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panel2.Controls.Add(this.guna2Panel9);
             this.panel2.Controls.Add(this.guna2Panel8);
             this.panel2.Controls.Add(this.guna2Panel7);
             this.panel2.Controls.Add(this.guna2Panel6);
@@ -90,18 +86,9 @@
             this.panel2.Size = new System.Drawing.Size(283, 1069);
             this.panel2.TabIndex = 4;
             // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.Controls.Add(this.btnBaotri);
-            this.guna2Panel9.Location = new System.Drawing.Point(0, 590);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(282, 79);
-            this.guna2Panel9.TabIndex = 17;
-            // 
             // btnBaotri
             // 
             this.btnBaotri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnBaotri.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnBaotri.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBaotri.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBaotri.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -112,7 +99,7 @@
             this.btnBaotri.Image = ((System.Drawing.Image)(resources.GetObject("btnBaotri.Image")));
             this.btnBaotri.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnBaotri.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnBaotri.Location = new System.Drawing.Point(1, 2);
+            this.btnBaotri.Location = new System.Drawing.Point(2, 2);
             this.btnBaotri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaotri.Name = "btnBaotri";
             this.btnBaotri.Size = new System.Drawing.Size(282, 79);
@@ -122,7 +109,7 @@
             // 
             // guna2Panel8
             // 
-            this.guna2Panel8.Controls.Add(this.btnThietbi);
+            this.guna2Panel8.Controls.Add(this.btnBaotri);
             this.guna2Panel8.Location = new System.Drawing.Point(1, 505);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(282, 79);
@@ -131,7 +118,6 @@
             // btnThietbi
             // 
             this.btnThietbi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnThietbi.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnThietbi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThietbi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThietbi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -142,7 +128,7 @@
             this.btnThietbi.Image = ((System.Drawing.Image)(resources.GetObject("btnThietbi.Image")));
             this.btnThietbi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThietbi.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnThietbi.Location = new System.Drawing.Point(0, 2);
+            this.btnThietbi.Location = new System.Drawing.Point(1, 2);
             this.btnThietbi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThietbi.Name = "btnThietbi";
             this.btnThietbi.Size = new System.Drawing.Size(282, 79);
@@ -152,32 +138,11 @@
             // 
             // guna2Panel7
             // 
-            this.guna2Panel7.Controls.Add(this.btnTimkiem);
+            this.guna2Panel7.Controls.Add(this.btnThietbi);
             this.guna2Panel7.Location = new System.Drawing.Point(0, 420);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(282, 79);
             this.guna2Panel7.TabIndex = 17;
-            // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnTimkiem.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimkiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimkiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnTimkiem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTimkiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimkiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimkiem.Image")));
-            this.btnTimkiem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnTimkiem.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnTimkiem.Location = new System.Drawing.Point(1, 2);
-            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(282, 79);
-            this.btnTimkiem.TabIndex = 14;
-            this.btnTimkiem.Text = "Tìm kiếm";
             // 
             // guna2Panel6
             // 
@@ -190,7 +155,6 @@
             // btnNhanvien
             // 
             this.btnNhanvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnNhanvien.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnNhanvien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnNhanvien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNhanvien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -220,7 +184,6 @@
             // btnHoadon
             // 
             this.btnHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnHoadon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnHoadon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHoadon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnHoadon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -249,7 +212,6 @@
             // btnBaocao
             // 
             this.btnBaocao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnBaocao.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnBaocao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBaocao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBaocao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -278,7 +240,6 @@
             // btnNCC
             // 
             this.btnNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnNCC.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnNCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnNCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -307,7 +268,6 @@
             // btnPhong
             // 
             this.btnPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnPhong.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -401,20 +361,9 @@
             this.panel1.Size = new System.Drawing.Size(1572, 999);
             this.panel1.TabIndex = 7;
             // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this;
-            // 
             // uC_ThemThietBi1
             // 
+            this.uC_ThemThietBi1.BackColor = System.Drawing.SystemColors.Control;
             this.uC_ThemThietBi1.Location = new System.Drawing.Point(-1, -2);
             this.uC_ThemThietBi1.Name = "uC_ThemThietBi1";
             this.uC_ThemThietBi1.Size = new System.Drawing.Size(1572, 999);
@@ -436,6 +385,18 @@
             this.uC_Phong1.Size = new System.Drawing.Size(1572, 999);
             this.uC_Phong1.TabIndex = 0;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -453,7 +414,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
-            this.guna2Panel9.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
@@ -473,7 +433,6 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnThietbi;
         private Guna.UI2.WinForms.Guna2Button btnBaocao;
-        private Guna.UI2.WinForms.Guna2Button btnTimkiem;
         private Guna.UI2.WinForms.Guna2Button btnBaotri;
         private Guna.UI2.WinForms.Guna2Button btnHoadon;
         private Guna.UI2.WinForms.Guna2Button btnNCC;
@@ -485,7 +444,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CircleButton btnThoat;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
