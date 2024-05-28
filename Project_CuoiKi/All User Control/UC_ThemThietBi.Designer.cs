@@ -116,13 +116,12 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1464, 840);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Thiết Bị";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnboqua
             // 
             this.btnboqua.BorderRadius = 18;
-            this.btnboqua.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.btnboqua.BorderThickness = 1;
             this.btnboqua.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btnboqua.CheckedState.ForeColor = System.Drawing.Color.White;
@@ -140,12 +139,11 @@
             this.btnboqua.Name = "btnboqua";
             this.btnboqua.Size = new System.Drawing.Size(125, 50);
             this.btnboqua.TabIndex = 32;
-            this.btnboqua.Text = "       Bỏ Qua";
+            this.btnboqua.Text = "      Bỏ Qua";
             // 
             // btndong
             // 
             this.btndong.BorderRadius = 18;
-            this.btndong.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.btndong.BorderThickness = 1;
             this.btndong.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btndong.CheckedState.ForeColor = System.Drawing.Color.White;
@@ -163,12 +161,12 @@
             this.btndong.Name = "btndong";
             this.btndong.Size = new System.Drawing.Size(125, 50);
             this.btndong.TabIndex = 31;
-            this.btndong.Text = "     Đóng";
+            this.btndong.Text = "            Đóng";
+            this.btndong.Click += new System.EventHandler(this.btndong_Click);
             // 
             // btnluu
             // 
             this.btnluu.BorderRadius = 18;
-            this.btnluu.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.btnluu.BorderThickness = 1;
             this.btnluu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btnluu.CheckedState.ForeColor = System.Drawing.Color.White;
@@ -186,12 +184,12 @@
             this.btnluu.Name = "btnluu";
             this.btnluu.Size = new System.Drawing.Size(125, 50);
             this.btnluu.TabIndex = 30;
-            this.btnluu.Text = "   Lưu";
+            this.btnluu.Text = "       Lưu";
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btnxoa
             // 
             this.btnxoa.BorderRadius = 18;
-            this.btnxoa.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.btnxoa.BorderThickness = 1;
             this.btnxoa.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btnxoa.CheckedState.ForeColor = System.Drawing.Color.White;
@@ -209,12 +207,11 @@
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(125, 50);
             this.btnxoa.TabIndex = 28;
-            this.btnxoa.Text = "     Xóa";
+            this.btnxoa.Text = "        Xóa";
             // 
             // btnsua
             // 
             this.btnsua.BorderRadius = 18;
-            this.btnsua.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.btnsua.BorderThickness = 1;
             this.btnsua.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btnsua.CheckedState.ForeColor = System.Drawing.Color.White;
@@ -232,12 +229,11 @@
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(125, 50);
             this.btnsua.TabIndex = 27;
-            this.btnsua.Text = "    Sửa";
+            this.btnsua.Text = "       Sửa";
             // 
             // btnthem
             // 
             this.btnthem.BorderRadius = 18;
-            this.btnthem.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.btnthem.BorderThickness = 1;
             this.btnthem.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btnthem.CheckedState.ForeColor = System.Drawing.Color.White;
@@ -255,7 +251,7 @@
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(125, 50);
             this.btnthem.TabIndex = 26;
-            this.btnthem.Text = "     Thêm";
+            this.btnthem.Text = "         Thêm";
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // cboloaithietbi
@@ -489,9 +485,9 @@
             this.dgridthietbi.Location = new System.Drawing.Point(7, 17);
             this.dgridthietbi.Name = "dgridthietbi";
             this.dgridthietbi.RowHeadersWidth = 51;
-            this.dgridthietbi.RowTemplate.Height = 24;
             this.dgridthietbi.Size = new System.Drawing.Size(840, 817);
             this.dgridthietbi.TabIndex = 0;
+            this.dgridthietbi.Click += new System.EventHandler(this.dgridthietbi_Click);
             // 
             // tabPage2
             // 
@@ -500,7 +496,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1464, 840);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Loại Thiết Bị";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
@@ -510,7 +506,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1464, 840);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Nhóm Thiết Bị";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // guna2Elipse1
@@ -522,6 +518,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.Name = "UC_ThemThietBi";

@@ -20,7 +20,6 @@ namespace Project_CuoiKi.Class
             conn = new SqlConnection(connstring);
             conn.ConnectionString = connstring;
             conn.Open();
-            //MessageBox.Show("Kết nối thành công");
         }
 
         public static DataTable GetDataToTable(string sql) //Lấy dữ liệu vào datagridview

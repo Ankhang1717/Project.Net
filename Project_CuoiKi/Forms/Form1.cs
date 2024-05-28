@@ -24,6 +24,7 @@ namespace Project_CuoiKi
             uC_Phong1.Visible = false;
             btnPhong.PerformClick();
             uC_Nhanvien1.Visible = false;
+            uC_ThemThietBi1.Visible = false;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -49,6 +50,13 @@ namespace Project_CuoiKi
             uC_Nhanvien1.Visible = true;
             uC_Nhanvien1.BringToFront();
 
+        }
+
+        private void btnThietbi_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Top = btnThietbi.Top + 200;
+            uC_ThemThietBi1.Visible = true;
+            uC_ThemThietBi1.BringToFront();
         }
     }
 }
