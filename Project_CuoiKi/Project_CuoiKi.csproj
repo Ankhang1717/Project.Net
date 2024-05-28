@@ -67,6 +67,12 @@
     <Compile Include="All User Control\UC_Phong.Designer.cs">
       <DependentUpon>UC_Phong.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_ThemThietBi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_ThemThietBi.Designer.cs">
+      <DependentUpon>UC_ThemThietBi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Phong.resx">
       <DependentUpon>UC_Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_ThemThietBi.resx">
+      <DependentUpon>UC_ThemThietBi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

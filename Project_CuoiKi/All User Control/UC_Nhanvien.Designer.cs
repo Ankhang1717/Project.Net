@@ -217,16 +217,10 @@
             this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox2.ItemHeight = 30;
             this.guna2ComboBox2.Items.AddRange(new object[] {
-<<<<<<< HEAD
             "Nam",
             "Nữ",
             "Khác"});
-=======
-            "Ca Sáng",
-            "Ca Chiều",
-            "Ca Tối",
-            "Ca Đêm"});
->>>>>>> 20e0188da909479b40af2f9352827b1898e3bcc0
+
             this.guna2ComboBox2.Location = new System.Drawing.Point(60, 469);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.Size = new System.Drawing.Size(371, 36);
