@@ -58,5 +58,12 @@ namespace Project_CuoiKi
             uC_ThemThietBi1.Visible = true;
             uC_ThemThietBi1.BringToFront();
         }
+
+        private void btnBaocao_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Top = btnBaocao.Top + 161 ;
+            uC_Baocao1.Visible = true;
+            uC_Baocao1 .BringToFront();
+        }
     }
 }

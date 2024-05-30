@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="All User Control\UC_Baocao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Baocao.Designer.cs">
+      <DependentUpon>UC_Baocao.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_Danhsachmay.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="All User Control\UC_Baocao.resx">
+      <DependentUpon>UC_Baocao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Danhsachmay.resx">
       <DependentUpon>UC_Danhsachmay.cs</DependentUpon>
     </EmbeddedResource>
