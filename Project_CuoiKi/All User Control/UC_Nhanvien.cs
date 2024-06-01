@@ -17,15 +17,5 @@ namespace Project_CuoiKi.All_User_Control
             InitializeComponent();
         }
 
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uC_Nhanvien_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
