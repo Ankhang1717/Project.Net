@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_CuoiKi.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,7 @@ namespace Project_CuoiKi.All_User_Control
         }
         DataTable tblcalam;
         DataTable tblnv;
+        DataTable tbltk;
 
         private void uC_Nhanvien_Load(object sender, EventArgs e)
         {
@@ -239,5 +241,144 @@ namespace Project_CuoiKi.All_User_Control
 
         }
 
+        //TÌM KIẾM
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+            if ((txtTen.Text == "") && (cboCaLam.Text == "") && (cboGioiTinh.Text == "") && (txtDiaChi.Text == "") && (mskDienThoai.Text == "(   )    -") && (mskNgaySinh.Text == "  /  /"))
+            {
+                MessageBox.Show("Bạn phải nhập 1 điều kiện tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            string sql;
+            sql = "select * from nhanvien where 1=1";
+            if (txtTen.Text != "")
+            {
+                sql = sql + "AND tennv like N'%" + txtTen.Text + "%'";
+                tblnv = functions.GetDataToTable(sql);
+                dgridNhanVien.DataSource = tblnv;
+                if (tblnv.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+
+            if (txtDiaChi.Text != "")
+            {
+                sql = sql + "AND diachi like N'%" + txtDiaChi.Text + "%'";
+                tblnv = functions.GetDataToTable(sql);
+                dgridNhanVien.DataSource = tblnv;
+                if (tblnv.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            if (mskNgaySinh.Text != "  /  /")
+            {
+                string input = mskNgaySinh.Text;
+
+                string[] parts = input.Split('/');
+                string ngay = parts[0].Trim();
+                string thang = parts[1].Trim();
+                string nam = parts[2].Trim();
+
+                string condition = "";
+                if (!string.IsNullOrEmpty(ngay))
+                {
+                    condition += "DAY(namsinh) = " + ngay;
+                }
+                if (!string.IsNullOrEmpty(thang))
+                {
+                    if (condition != "") condition += " AND ";
+                    condition += "MONTH(namsinh) = " + thang;
+                }
+                if (!string.IsNullOrEmpty(nam))
+                {
+                    if (condition != "") condition += " AND ";
+                    condition += "YEAR(namsinh) = " + nam;
+                }
+
+                if (condition != "")
+                {
+                    sql = sql + "and " + condition;
+                    tblnv = functions.GetDataToTable(sql);
+                    dgridNhanVien.DataSource = tblnv;
+                    if (tblnv.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
+            if (mskDienThoai.Text != "(   )    -")
+            {
+                string input1 = mskDienThoai.Text;
+
+                // Loại bỏ các ký tự không phải là số
+                string sdt = new string(input1.Where(char.IsDigit).ToArray());
+
+                if (sdt.Length != 10)
+                {
+                    MessageBox.Show("Số điện thoại không hợp lệ. Vui lòng nhập lại.");
+                    return;
+                }
+                else
+                {
+                    string sql1 = "SELECT * FROM nhanvien WHERE dienthoai = " + sdt + "";
+                    tblnv = functions.GetDataToTable(sql1);
+                    dgridNhanVien.DataSource = tblnv;
+                    if (tblnv.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
+
+            if (cboCaLam.SelectedIndex != -1)
+            {
+                string tenCa = cboCaLam.SelectedItem.ToString();
+                string sql2 = "select * from nhanvien inner join calam on nhanvien.maca = calam.maca where calam.tenca = N'" + tenCa + "'";
+                tblnv = functions.GetDataToTable(sql2);
+                dgridNhanVien.DataSource = tblnv;
+                if (tblnv.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            if (cboGioiTinh.SelectedIndex != -1)
+            {
+                string gt = cboGioiTinh.SelectedItem.ToString();
+                sql = sql + "and gioitinh = N'" + gt + "'";
+                tblnv = functions.GetDataToTable(sql);
+                dgridNhanVien.DataSource = tblnv;
+                if (tblnv.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+        }
+
+        private void btnHienthitatca_Click(object sender, EventArgs e)
+        {
+            string sql;
+            sql = "select * from NhanVien";
+            tblnv = Class.functions.GetDataToTable(sql);
+            dgridNhanVien.DataSource = tblnv;
+            dgridNhanVien.Columns[0].HeaderText = "Mã nhân viên";
+            dgridNhanVien.Columns[1].HeaderText = "Tên nhân viên";
+            dgridNhanVien.Columns[2].HeaderText = "Mã ca";
+            dgridNhanVien.Columns[3].HeaderText = "Năm sinh";
+            dgridNhanVien.Columns[4].HeaderText = "Giới tính";
+            dgridNhanVien.Columns[5].HeaderText = "Địa chỉ";
+            dgridNhanVien.Columns[6].HeaderText = "Điện thoại";
+            dgridNhanVien.AllowUserToAddRows = false;
+            dgridNhanVien.EditMode = DataGridViewEditMode.EditProgrammatically;
+        }
     }
 }
