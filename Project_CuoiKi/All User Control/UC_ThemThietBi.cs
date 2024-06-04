@@ -17,13 +17,13 @@ namespace Project_CuoiKi.All_User_Control
         {
             InitializeComponent();
 
-            functions.ketnoi();
+            Class.functions.ketnoi();
         }
         private void UC_ThemThietBi_Load(object sender, EventArgs e)
         {
-            functions.fillcombo("SELECT MaLoaiTB,TenLoaiTB  FROM LoaiThietBi", cboloaithietbi,"MaLoaiTB", "TenLoaiTB");
+            Class.functions.fillcombo("SELECT MaLoaiTB,TenLoaiTB  FROM LoaiThietBi", cboloaithietbi,"MaLoaiTB", "TenLoaiTB");
             cboloaithietbi.SelectedIndex = -1;
-            functions.fillcombo("SELECT MaNhomTB,TenNhomTB  FROM NhomThietBi", cbonhomthietbi, "MaNhomTB", "TenNhomTB");
+            Class.functions.fillcombo("SELECT MaNhomTB,TenNhomTB  FROM NhomThietBi", cbonhomthietbi, "MaNhomTB", "TenNhomTB");
             cbonhomthietbi.SelectedIndex = -1;
             Load_DataGridView();
         }
@@ -176,9 +176,5 @@ namespace Project_CuoiKi.All_User_Control
             }
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

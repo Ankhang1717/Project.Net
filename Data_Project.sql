@@ -80,7 +80,7 @@ create table BaoTri (
 )
 
 create table May(
-	MaMay nvarchar(10) primary key,
+	MaMay nvarchar(10),
 	MaPhong nvarchar(10),
 	TrangThai int
 )
@@ -112,6 +112,29 @@ create table NhomThietBi (
 alter table ChiTietHDN
 ADD PRIMARY KEY (MaHDN, MaTB, MaLoaiTB, MaNhomTB);
 
+-- Thêm khóa chính mới bao gồm cả MaMay và MaPhong
+ALTER TABLE May
+ADD PRIMARY KEY (MaMay, MaPhong);
+
+ALTER TABLE May
+ALTER COLUMN MaMay NVARCHAR(10) NOT NULL;
+
+ALTER TABLE May
+ALTER COLUMN MaPhong NVARCHAR(10) NOT NULL;
+
+ALTER TABLE BaoTri
+ADD MaPhong NVARCHAR(10); 
+
+
+alter table May
+drop constraint PK__May__3A5BBB4172FE1C18
+
+alter table Baotri
+drop constraint PK_BT_May
+
+alter table Hoadonban
+drop constraint PK_HDB_May
+
 -- Thêm Khóa Ngoại
 alter table Phong
 add constraint PK_Phong_LTB
@@ -119,7 +142,7 @@ foreign key (MaLoaiTB) references LoaiThietBi (MaLoaiTB)
 
 alter table HoaDonBan
 add constraint PK_HDB_May
-foreign key (MaMay) references May (MaMay)
+foreign key (MaMay, MaPhong) references May (MaMay, MaPhong)
 
 alter table HoaDonBan
 add constraint PK_HDB_Phong
@@ -155,7 +178,7 @@ foreign key (MaCa) references CaLam (MaCa)
 
 alter table BaoTri
 add constraint PK_BT_May
-foreign key (MaMay) references May (MaMay)
+foreign key (MaMay, MaPhong) references May (MaMay, MaPhong)
 
 alter table BaoTri
 add constraint PK_BT_NBT
@@ -359,3 +382,5 @@ BEGIN
     SELECT @NewMaMay, MaPhong, TrangThai
     FROM inserted;
 END;
+
+drop trigger trg_InsertMay

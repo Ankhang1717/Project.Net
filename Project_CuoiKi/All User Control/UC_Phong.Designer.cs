@@ -186,16 +186,17 @@
             // 
             // uC_Danhsachmay1
             // 
-            this.uC_Danhsachmay1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Danhsachmay1.Location = new System.Drawing.Point(0, -3);
             this.uC_Danhsachmay1.Name = "uC_Danhsachmay1";
             this.uC_Danhsachmay1.Size = new System.Drawing.Size(1572, 999);
             this.uC_Danhsachmay1.TabIndex = 26;
+            this.uC_Danhsachmay1.Load += new System.EventHandler(this.uC_Danhsachmay1_Load);
             // 
             // UC_Phong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.uC_Danhsachmay1);
+//            this.Controls.Add(this.uC_Danhsachmay1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button9);
             this.Controls.Add(this.guna2Button8);

@@ -65,3 +65,22 @@ D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.cs
 D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
 D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
 D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Baocao.resources
+D:\Kì 2 Năm 3\C# code\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Baocao.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe.config
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.pdb
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\bin\Debug\Guna.UI2.dll
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.AssemblyReference.cache
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Baocao.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Danhsachmay.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.uC_Nhanvien.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Phong.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_ThemThietBi.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.Form1.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.frmdangnhap.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.Properties.Resources.resources
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.GenerateResource.cache
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CoreCompileInputs.cache
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CopyComplete
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
+D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb

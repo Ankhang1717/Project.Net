@@ -20,8 +20,16 @@ namespace Project_CuoiKi.All_User_Control
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            this.Controls.Add(this.uC_Danhsachmay1);
             uC_Danhsachmay1.Visible = true;
             uC_Danhsachmay1.BringToFront();
+
+
+        }
+
+        private void uC_Danhsachmay1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

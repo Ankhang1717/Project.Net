@@ -16,9 +16,14 @@ namespace Project_CuoiKi
         public Form1()
         {
             InitializeComponent();
+            InitializeUserControls();
+        }
+        private void InitializeUserControls()
+        {
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+            private void Form1_Load(object sender, EventArgs e)
         {
             Class.functions.ketnoi();
             uC_Phong1.Visible = false;
