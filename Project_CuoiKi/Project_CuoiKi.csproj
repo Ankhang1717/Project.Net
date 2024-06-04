@@ -21,7 +21,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>0</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -79,6 +79,12 @@
     <Compile Include="All User Control\UC_ThemThietBi.Designer.cs">
       <DependentUpon>UC_ThemThietBi.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_TKBaocao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_TKBaocao.Designer.cs">
+      <DependentUpon>UC_TKBaocao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Project_C_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Project_C_DataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="All User Control\UC_Baocao.resx">
       <DependentUpon>UC_Baocao.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_ThemThietBi.resx">
       <DependentUpon>UC_ThemThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_TKBaocao.resx">
+      <DependentUpon>UC_TKBaocao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -135,6 +149,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_Project_C_DataSet.xsc">
+      <DependentUpon>_Project_C_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Project_C_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Project_C_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Project_C_DataSet.xss">
+      <DependentUpon>_Project_C_DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

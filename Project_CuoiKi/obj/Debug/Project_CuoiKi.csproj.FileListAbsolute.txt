@@ -65,6 +65,7 @@ D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.cs
 D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
 D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
 D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Baocao.resources
+<<<<<<< HEAD
 D:\Kì 2 Năm 3\C# code\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Baocao.resources
 D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe.config
 D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe
@@ -84,3 +85,43 @@ D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.Co
 D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CopyComplete
 D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
 D:\Clone GitHub\C#\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
+=======
+D:\Làm lại NET\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe.config
+D:\Làm lại NET\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe
+D:\Làm lại NET\Project_CuoiKi\bin\Debug\Project_CuoiKi.pdb
+D:\Làm lại NET\Project_CuoiKi\bin\Debug\Guna.UI2.dll
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.AssemblyReference.cache
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Baocao.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Danhsachmay.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.uC_Nhanvien.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Phong.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_ThemThietBi.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.Form1.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.frmdangnhap.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.Properties.Resources.resources
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.GenerateResource.cache
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CoreCompileInputs.cache
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_.82AA44B0.Up2Date
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
+D:\Làm lại NET\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
+C:\Users\PC\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe.config
+C:\Users\PC\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.exe
+C:\Users\PC\Project.Net\Project_CuoiKi\bin\Debug\Project_CuoiKi.pdb
+C:\Users\PC\Project.Net\Project_CuoiKi\bin\Debug\Guna.UI2.dll
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.AssemblyReference.cache
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Baocao.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Danhsachmay.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.uC_Nhanvien.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_Phong.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_ThemThietBi.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.Form1.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.frmdangnhap.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.Properties.Resources.resources
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.GenerateResource.cache
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.csproj.CoreCompileInputs.cache
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_.82AA44B0.Up2Date
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
+C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_TKBaocao.resources
+>>>>>>> 2cd803785f79eda834ec2614edcd6df9bd585485
+D:\Kì 2 Năm 3\C# code\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_TKBaocao.resources
