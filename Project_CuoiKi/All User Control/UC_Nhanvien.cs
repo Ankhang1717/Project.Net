@@ -226,16 +226,148 @@ namespace Project_CuoiKi.All_User_Control
             txtMaNV.Text = "";
             txtTen.Text = "";
             txtDiaChi.Text = "";
-            txtUser.Text = "";
-            txtPass.Text = "";
             cboCaLam.Text = "";
             cboGioiTinh.Text = "";
             mskDienThoai.Text = "";
             mskNgaySinh.Text = "";
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            btnThem.Enabled = false;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+            btnBoqua.Enabled = true;
+            txtMaNV.Enabled = true;
+            resetvalue_NhanVien();
+        }
+
+        private void dgridNhanVien_Click(object sender, EventArgs e)
+        {
+            string ma;
+            if (btnThem.Enabled == false)
+            {
+                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMaNV.Focus();
+                return;
+            }
+            if (tblnv.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu!", "Thông báo",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+                return;
+            }
+            txtMaNV.Text = dgridNhanVien.CurrentRow.Cells["MaNV"].Value.ToString();
+            txtTen.Text = dgridNhanVien.CurrentRow.Cells["TenNV"].Value.ToString();
+            ma = dgridNhanVien.CurrentRow.Cells["MaCa"].Value.ToString();
+            cboCaLam.Text = Class.functions.getfieldvalues("Select TenCa from CaLam where MaCa =N'" + ma + "' ");
+            cboGioiTinh.Text = dgridNhanVien.CurrentRow.Cells["GioiTinh"].Value.ToString();
+            txtDiaChi.Text = dgridNhanVien.CurrentRow.Cells["DiaChi"].Value.ToString();
+            mskDienThoai.Text = dgridNhanVien.CurrentRow.Cells["DienThoai"].Value.ToString();
+            mskNgaySinh.Text = dgridNhanVien.CurrentRow.Cells["NamSinh"].Value.ToString();
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            btnBoqua.Enabled = true;
 
         }
 
+
         private void btnLuu_Click(object sender, EventArgs e)
+        {
+            string sql;
+            if (txtMaNV.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMaNV.Focus();
+                return;
+            }
+            if (txtTen.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập tên nhan viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTen.Focus();
+                return;
+            }
+            if (cboCaLam.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập ca làm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboCaLam.Focus();
+                return;
+            }
+            if (cboGioiTinh.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập mã giới tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboGioiTinh.Focus();
+                return;
+            }
+            if (txtDiaChi.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập địa chỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDiaChi.Focus();
+                return;
+            }
+            if (mskDienThoai.Text == "(   )    -")
+            {
+                MessageBox.Show("Bạn phải nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                mskDienThoai.Focus();
+                return;
+            }
+            if (mskNgaySinh.Text == "  /  /")
+            {
+                MessageBox.Show("Bạn phải nhập ngày sinh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                mskNgaySinh.Focus();
+                return;
+            }
+            if (!functions.isdate(mskNgaySinh.Text))
+            {
+                MessageBox.Show("Bạn phải nhập lại ngày sinh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                mskNgaySinh.Text = "";
+                mskNgaySinh.Focus();
+                return;
+            }
+            sql = "select MaNV from NhanVien where MaNV = N'" + txtMaNV.Text + "'";
+            if (Class.functions.CheckKey(sql))
+            {
+                MessageBox.Show("Mã nhân viên này đã có, vui lòng nhập mã khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtMaNV.Text = "";
+                txtMaNV.Focus();
+                return;
+            }
+
+            sql = "INSERT INTO NhanVien(MaNV, TenNV, MaCa, NamSinh, GioiTinh, DiaChi, DienThoai) " +
+                          "VALUES(N'" + txtMaNV.Text.Trim() + "', N'" + txtTen.Text.Trim() + "', N'" + cboCaLam.SelectedValue.ToString() + "', '" +
+                          Class.functions.convertdatetime(mskNgaySinh.Text.Trim()) + "', N'" + cboGioiTinh.Text + "', N'" + txtDiaChi.Text.Trim() + "', '" + mskDienThoai.Text.Trim() + "')";
+            Class.functions.runsql(sql);
+            Load_DataGrid_NhanVien();
+            resetvalue_NhanVien();
+            btnXoa.Enabled = true;
+            btnThem.Enabled = true;
+            btnSua.Enabled = true;
+            btnBoqua.Enabled = false;
+            btnLuu.Enabled = false;
+            txtMaNV.Enabled = false;
+
+        }
+
+        private void btnBoqua_Click(object sender, EventArgs e)
+        {
+            resetvalue_NhanVien();
+            btnThem.Enabled = true;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            btnBoqua.Enabled = true;
+            btnLuu.Enabled = false;
+            txtMaNV.Enabled = true;
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
         {
 
         }
@@ -391,5 +523,6 @@ namespace Project_CuoiKi.All_User_Control
             mskNgaySinh.Text = "  /  /";
             txtDiaChi.Text = "";
         }
+
     }
 }

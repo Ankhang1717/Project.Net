@@ -125,3 +125,5 @@ C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
 C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_TKBaocao.resources
 >>>>>>> 2cd803785f79eda834ec2614edcd6df9bd585485
 D:\Kì 2 Năm 3\C# code\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_TKBaocao.resources
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_TKBaocao.resources
+>>>>>>> 21728e678a3e9bd35cf4d92cd880cfd4c33588b7
