@@ -96,7 +96,36 @@ namespace Project_CuoiKi.All_User_Control
 
         private void btnDT_Click(object sender, EventArgs e)
         {
+            if (rbtn1.Checked)
+            {
+                // Truy vấn tổng tiền trong khoảng thời gian từ date1 đến date2
+                string sql = $"SELECT SUM(TongTien) as tt FROM HoaDonBan WHERE NgayThue BETWEEN '{date1.Value.ToString("yyyy-MM-dd")}' AND '{date2.Value.ToString("yyyy-MM-dd")}'";
+                string result = functions.getfieldvalues(sql);
 
+                // Kiểm tra nếu kết quả là null hoặc rỗng
+                if (string.IsNullOrEmpty(result))
+                {
+                    result = "0";
+                }
+
+                // Hiển thị giá trị trong hộp thoại MessageBox
+                MessageBox.Show("Doanh thu từ ngày " + date1.Value.ToString("dd/MM/yyyy") + " đến ngày " + date2.Value.ToString("dd/MM/yyyy") + " là: " + result, "Doanh thu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (rbtn2.Checked)
+            {
+                // Truy vấn tổng tiền vào ngày được chọn
+                string sql = $"SELECT SUM(TongTien) as tt FROM HoaDonBan WHERE NgayThue = '{date3.Value.ToString("yyyy-MM-dd")}'";
+                string result = functions.getfieldvalues(sql);
+
+                // Kiểm tra nếu kết quả là null hoặc rỗng
+                if (string.IsNullOrEmpty(result))
+                {
+                    result = "0";
+                }
+
+                // Hiển thị giá trị trong hộp thoại MessageBox
+                MessageBox.Show("Doanh thu ngày " + date3.Value.ToString("dd/MM/yyyy") + " là: " + result, "Doanh thu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void datagridview_Click(object sender, EventArgs e)
@@ -120,12 +149,12 @@ namespace Project_CuoiKi.All_User_Control
 
         private void date1_ValueChanged(object sender, EventArgs e)
         {
-
+            ngay1 = date1.Value.ToString();
         }
 
         private void date2_ValueChanged(object sender, EventArgs e)
         {
-
+            ngay2 = date2.Value.ToString();
         }
 
         private void date3_ValueChanged(object sender, EventArgs e)

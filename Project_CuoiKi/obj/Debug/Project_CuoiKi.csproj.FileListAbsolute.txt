@@ -102,3 +102,4 @@ C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_.82AA44B0.Up2Date
 C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.exe
 C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.pdb
 C:\Users\PC\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_TKBaocao.resources
+D:\Tài liệu học\.net\Project.Net\Project_CuoiKi\obj\Debug\Project_CuoiKi.All_User_Control.UC_TKBaocao.resources
