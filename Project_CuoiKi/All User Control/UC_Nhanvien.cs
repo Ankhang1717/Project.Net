@@ -19,7 +19,6 @@ namespace Project_CuoiKi.All_User_Control
         }
         DataTable tblcalam;
         DataTable tblnv;
-        DataTable tbltk;
 
         private void uC_Nhanvien_Load(object sender, EventArgs e)
         {
@@ -326,8 +325,8 @@ namespace Project_CuoiKi.All_User_Control
                 }
                 else
                 {
-                    string sql1 = "SELECT * FROM nhanvien WHERE dienthoai = " + sdt + "";
-                    tblnv = functions.GetDataToTable(sql1);
+                    sql = sql + "and dienthoai = " + sdt + "";
+                    tblnv = functions.GetDataToTable(sql);
                     dgridNhanVien.DataSource = tblnv;
                     if (tblnv.Rows.Count == 0)
                     {
@@ -340,14 +339,20 @@ namespace Project_CuoiKi.All_User_Control
             if (cboCaLam.SelectedIndex != -1)
             {
                 string tenCa = cboCaLam.SelectedItem.ToString();
-                string sql2 = "select * from nhanvien inner join calam on nhanvien.maca = calam.maca where calam.tenca = N'" + tenCa + "'";
-                tblnv = functions.GetDataToTable(sql2);
-                dgridNhanVien.DataSource = tblnv;
-                if (tblnv.Rows.Count == 0)
+                string sqlmaca = "select maca from calam where tenca = N'" + tenCa + "'";
+                DataTable dtMaCa = functions.GetDataToTable(sqlmaca);
+                if(dtMaCa.Rows.Count > 0)
                 {
-                    MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                    string maca = dtMaCa.Rows[0]["maca"].ToString();
+                    sql = sql + "AND maca = N'" + maca + "'";
+                    tblnv = functions.GetDataToTable(sql);
+                    dgridNhanVien.DataSource = tblnv;
+                    if (tblnv.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }               
             }
 
             if (cboGioiTinh.SelectedIndex != -1)
@@ -379,6 +384,12 @@ namespace Project_CuoiKi.All_User_Control
             dgridNhanVien.Columns[6].HeaderText = "Điện thoại";
             dgridNhanVien.AllowUserToAddRows = false;
             dgridNhanVien.EditMode = DataGridViewEditMode.EditProgrammatically;
+            txtTen.Text = "";
+            cboCaLam.SelectedIndex = -1;
+            cboGioiTinh.SelectedIndex = -1;
+            mskDienThoai.Text = "(   )    -";
+            mskNgaySinh.Text = "  /  /";
+            txtDiaChi.Text = "";
         }
     }
 }
