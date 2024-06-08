@@ -71,5 +71,12 @@ namespace Project_CuoiKi
             uC_Baocao1.Visible = true;
             uC_Baocao1.BringToFront();
         }
+
+        private void btnHoadon_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Top = btnHoadon.Top + 244;
+            uC_HOADON1.Visible = true;
+            uC_HOADON1.BringToFront() ;
+        }
     }
 }

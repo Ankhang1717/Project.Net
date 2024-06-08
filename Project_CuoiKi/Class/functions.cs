@@ -16,7 +16,7 @@ namespace Project_CuoiKi.Class
 
         public static void ketnoi()
         {
-            connstring = "Data Source=LAPTOP-HCCGS770\\ANKHANG;Initial Catalog=Project_C#;Integrated Security=True;Encrypt=False";
+            connstring = "Data Source=LAPTOP-1R6VSP78\\PHIYENN;Initial Catalog=Project_C#;Integrated Security=True;Encrypt=False";
             conn = new SqlConnection(connstring);
             conn.ConnectionString = connstring;
             conn.Open();

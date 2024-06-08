@@ -51,15 +51,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnThoat = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uC_HOADON1 = new Project_CuoiKi.All_User_Control.UC_HOADON();
+            this.uC_Nhanvien1 = new Project_CuoiKi.All_User_Control.uC_Nhanvien();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_Baocao1 = new Project_CuoiKi.All_User_Control.UC_Baocao();
-            this.uC_ThemThietBi1 = new Project_CuoiKi.All_User_Control.UC_ThemThietBi();
-            this.uC_Nhanvien1 = new Project_CuoiKi.All_User_Control.uC_Nhanvien();
-            this.uC_Phong1 = new Project_CuoiKi.All_User_Control.UC_Phong();
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
@@ -207,6 +206,7 @@
             this.btnHoadon.Size = new System.Drawing.Size(283, 79);
             this.btnHoadon.TabIndex = 15;
             this.btnHoadon.Text = "Hóa đơn";
+            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
             // 
             // guna2Panel4
             // 
@@ -365,15 +365,28 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.uC_Baocao1);
-            this.panel1.Controls.Add(this.uC_ThemThietBi1);
+            this.panel1.Controls.Add(this.uC_HOADON1);
             this.panel1.Controls.Add(this.uC_Nhanvien1);
-            this.panel1.Controls.Add(this.uC_Phong1);
             this.panel1.Location = new System.Drawing.Point(328, 91);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1573, 999);
             this.panel1.TabIndex = 7;
+            // 
+            // uC_HOADON1
+            // 
+            this.uC_HOADON1.Location = new System.Drawing.Point(-1054, 110);
+            this.uC_HOADON1.Name = "uC_HOADON1";
+            this.uC_HOADON1.Size = new System.Drawing.Size(1572, 999);
+            this.uC_HOADON1.TabIndex = 8;
+            // 
+            // uC_Nhanvien1
+            // 
+            this.uC_Nhanvien1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_Nhanvien1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uC_Nhanvien1.Name = "uC_Nhanvien1";
+            this.uC_Nhanvien1.Size = new System.Drawing.Size(1572, 999);
+            this.uC_Nhanvien1.TabIndex = 1;
             // 
             // guna2Elipse1
             // 
@@ -395,38 +408,9 @@
             // 
             this.guna2Elipse5.TargetControl = this;
             // 
-            // uC_Baocao1
+            // guna2Elipse6
             // 
-            this.uC_Baocao1.Location = new System.Drawing.Point(-1, -1);
-            this.uC_Baocao1.Margin = new System.Windows.Forms.Padding(5);
-            this.uC_Baocao1.Name = "uC_Baocao1";
-            this.uC_Baocao1.Size = new System.Drawing.Size(1565, 959);
-            this.uC_Baocao1.TabIndex = 9;
-            // 
-            // uC_ThemThietBi1
-            // 
-            this.uC_ThemThietBi1.BackColor = System.Drawing.SystemColors.Control;
-            this.uC_ThemThietBi1.Location = new System.Drawing.Point(-1, -1);
-            this.uC_ThemThietBi1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.uC_ThemThietBi1.Name = "uC_ThemThietBi1";
-            this.uC_ThemThietBi1.Size = new System.Drawing.Size(1572, 999);
-            this.uC_ThemThietBi1.TabIndex = 8;
-            // 
-            // uC_Nhanvien1
-            // 
-            this.uC_Nhanvien1.Location = new System.Drawing.Point(-1, -1);
-            this.uC_Nhanvien1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.uC_Nhanvien1.Name = "uC_Nhanvien1";
-            this.uC_Nhanvien1.Size = new System.Drawing.Size(1572, 999);
-            this.uC_Nhanvien1.TabIndex = 1;
-            // 
-            // uC_Phong1
-            // 
-            this.uC_Phong1.Location = new System.Drawing.Point(-1, -2);
-            this.uC_Phong1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.uC_Phong1.Name = "uC_Phong1";
-            this.uC_Phong1.Size = new System.Drawing.Size(1572, 999);
-            this.uC_Phong1.TabIndex = 0;
+            this.guna2Elipse6.TargetControl = this;
             // 
             // Form1
             // 
@@ -491,6 +475,8 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private All_User_Control.UC_Baocao uC_Baocao1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private All_User_Control.UC_HOADON uC_HOADON1;
     }
 }
 

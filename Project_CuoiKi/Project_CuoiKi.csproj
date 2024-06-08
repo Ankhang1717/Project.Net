@@ -61,6 +61,12 @@
     <Compile Include="All User Control\UC_Danhsachmay.Designer.cs">
       <DependentUpon>UC_Danhsachmay.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_HOADON.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_HOADON.Designer.cs">
+      <DependentUpon>UC_HOADON.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_Nhanvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Danhsachmay.resx">
       <DependentUpon>UC_Danhsachmay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_HOADON.resx">
+      <DependentUpon>UC_HOADON.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Nhanvien.resx">
       <DependentUpon>UC_Nhanvien.cs</DependentUpon>

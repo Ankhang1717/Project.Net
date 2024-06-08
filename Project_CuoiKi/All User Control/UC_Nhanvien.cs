@@ -16,6 +16,7 @@ namespace Project_CuoiKi.All_User_Control
         public uC_Nhanvien()
         {
             InitializeComponent();
+            Class.functions.ketnoi();
         }
         DataTable tblcalam;
         DataTable tblnv;
