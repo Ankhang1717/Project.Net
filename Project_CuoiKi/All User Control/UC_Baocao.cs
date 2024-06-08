@@ -32,7 +32,7 @@ namespace Project_CuoiKi.All_User_Control
             functions.fillcombo("SELECT MaNV  FROM NhanVien", cboManhanvien, "MaNV", "MaNV");
             cboManhanvien.SelectedIndex = -1;
         }
-        private void Load_DataGridView()
+        public void Load_DataGridView()
         {
             string sql;
             sql = "SELECT * FROM HoaDonBan  ";

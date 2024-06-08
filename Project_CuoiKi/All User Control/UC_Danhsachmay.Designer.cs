@@ -41,7 +41,6 @@
             this.lbMaMay = new System.Windows.Forms.Label();
             this.lbTrangThai = new System.Windows.Forms.Label();
             this.txtmaphong = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.txtmamay = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDong = new Guna.UI2.WinForms.Guna2Button();
             this.btnThuemay = new Guna.UI2.WinForms.Guna2Button();
@@ -64,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(656, 133);
+            this.label1.Location = new System.Drawing.Point(587, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(259, 39);
             this.label1.TabIndex = 1;
@@ -196,21 +195,6 @@
             this.txtmaphong.Size = new System.Drawing.Size(259, 37);
             this.txtmaphong.TabIndex = 10;
             // 
-            // guna2ContextMenuStrip1
-            // 
-            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
-            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // txtmamay
             // 
             this.txtmamay.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -258,6 +242,7 @@
             this.btnThuemay.Size = new System.Drawing.Size(151, 67);
             this.btnThuemay.TabIndex = 28;
             this.btnThuemay.Text = "Thuê máy";
+            this.btnThuemay.Click += new System.EventHandler(this.btnThuemay_Click);
             // 
             // txtTrangthai
             // 
@@ -320,7 +305,6 @@
         private System.Windows.Forms.Label lbTrangThai;
         private System.Windows.Forms.Label lbMaMay;
         private System.Windows.Forms.Label lbMaPhong;
-        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private Guna.UI2.WinForms.Guna2TextBox txtmamay;
         private Guna.UI2.WinForms.Guna2Button btnDong;
         private Guna.UI2.WinForms.Guna2Button btnThuemay;

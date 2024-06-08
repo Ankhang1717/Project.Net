@@ -85,6 +85,12 @@
     <Compile Include="All User Control\UC_TKBaocao.Designer.cs">
       <DependentUpon>UC_TKBaocao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DangXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DangXuat.Designer.cs">
+      <DependentUpon>DangXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="Forms\frmdangnhap.Designer.cs">
       <DependentUpon>frmdangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThueMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ThueMay.Designer.cs">
+      <DependentUpon>ThueMay.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,11 +135,17 @@
     <EmbeddedResource Include="All User Control\UC_TKBaocao.resx">
       <DependentUpon>UC_TKBaocao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DangXuat.resx">
+      <DependentUpon>DangXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmdangnhap.resx">
       <DependentUpon>frmdangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThueMay.resx">
+      <DependentUpon>ThueMay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

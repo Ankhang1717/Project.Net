@@ -101,6 +101,76 @@ namespace Project_CuoiKi.Class
             return ma;
         }
 
+        public static int GetTotalMachines1()
+        {
+            string sql1 = "SELECT COUNT(*) FROM May where maphong = 'P01'";
+
+            using (SqlCommand command = new SqlCommand(sql1, conn))
+            {
+                try
+                {
+                    // Thực hiện truy vấn và trả về kết quả
+                    return (int)command.ExecuteScalar();
+                }
+                catch (Exception ex)
+                {
+                    // Xử lý ngoại lệ nếu có và trả về giá trị mặc định
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                    return 0;
+                }
+            }
+        }
+        public static int GetTotalMachines2()
+        {
+            string sql2 = "SELECT COUNT(*) FROM May where maphong = 'P02'";
+
+            using (SqlCommand command = new SqlCommand(sql2, conn))
+            {
+                try
+                {
+                    // Thực hiện truy vấn và trả về kết quả
+                    return (int)command.ExecuteScalar();
+                }
+                catch (Exception ex)
+                {
+                    // Xử lý ngoại lệ nếu có và trả về giá trị mặc định
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                    return 0;
+                }
+            }
+        }
+
+        public static int GetTotalMachines3()
+        {
+            string sql3 = "SELECT COUNT(*) FROM May where maphong = 'P03'";
+
+            using (SqlCommand command = new SqlCommand(sql3, conn))
+            {
+                try
+                {
+                    // Thực hiện truy vấn và trả về kết quả
+                    return (int)command.ExecuteScalar();
+                }
+                catch (Exception ex)
+                {
+                    // Xử lý ngoại lệ nếu có và trả về giá trị mặc định
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+                    return 0;
+                }
+            }
+        }
+
+        public static string GenerateMaHDB()
+        {
+            string maHDB = "";
+            int count;
+            string sql = "SELECT COUNT(*) FROM HoaDonBan";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            count = (int)cmd.ExecuteScalar() + 1;
+            maHDB = "HDB" + count.ToString("D4");
+            return maHDB;
+        }
+
 
     }
 }

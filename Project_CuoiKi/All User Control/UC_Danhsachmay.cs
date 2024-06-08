@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -14,11 +15,15 @@ namespace Project_CuoiKi.All_User_Control
 {
     public partial class UC_Danhsachmay : UserControl
     {
+        private UC_Phong callingForm = null;
+
+        public string maPhongSelected;
+
         public UC_Danhsachmay()
         {
             InitializeComponent();
             Class.functions.ketnoi();
-            Load_DataGridView();
+           // Load_DataGridView(maPhongSelected);
             txtmaphong.Enabled = false;
         }
 
@@ -34,10 +39,10 @@ namespace Project_CuoiKi.All_User_Control
         }
 
         DataTable tbldsm;
-        private void Load_DataGridView()
+        public void Load_DataGridView(string maPhong)
         {
             string sql;
-            sql = "SELECT * FROM May where trangthai = 0 and maphong = 'P01'";
+            sql = $"SELECT * FROM May where trangthai = 0 and maphong = '{maPhong}'";
             tbldsm = Class.functions.GetDataToTable(sql);
             dgridmay.DataSource = tbldsm;
             dgridmay.Columns[0].HeaderText = "Mã Máy";
@@ -46,6 +51,11 @@ namespace Project_CuoiKi.All_User_Control
             dgridmay.AllowUserToAddRows = false;
             dgridmay.EditMode = DataGridViewEditMode.EditProgrammatically;
 
+        }
+
+        public void GetCallingForm(UC_Phong callingForm)
+        {
+            this.callingForm = callingForm;
         }
 
         private void dgridmay_Click(object sender, EventArgs e)
@@ -68,13 +78,18 @@ namespace Project_CuoiKi.All_User_Control
             btnXoa.Enabled = true;
             btnBoqua.Enabled = true;
             btnLuu.Enabled = true;
-            
+            txtmamay.Enabled = false;
+
+            selectedMaPhong = txtmaphong.Text;
+            selectedMaMay = txtmamay.Text;
+
         }
         private void resetvalues()
         {
             txtmamay.Text = "";
             txtmaphong.Text = "";
             txtTrangthai.Text = "";
+            txtmamay.Enabled = true;
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -86,6 +101,8 @@ namespace Project_CuoiKi.All_User_Control
             resetvalues();
             txtmaphong.Text = "P01";
 
+            
+            
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -105,8 +122,10 @@ namespace Project_CuoiKi.All_User_Control
             {
                 sql = "DELETE May WHERE Mamay = N'" + txtmamay.Text + " '";
                 Class.functions.runsql(sql);
-                Load_DataGridView();
+                Load_DataGridView(maPhongSelected);
+                callingForm.LoadTotalMachines();
                 resetvalues();
+             
             }
         }
 
@@ -123,6 +142,27 @@ namespace Project_CuoiKi.All_User_Control
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            if(tbldsm.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }    
+            if(txtmaphong.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if(txtTrangthai.Text == "")
+            {
+                MessageBox.Show("Bạn phải nhập trạng thái", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTrangthai.Focus();
+                return;
+            }
+            string sql;
+            sql = "UPDATE May set trangthai = N'" + txtTrangthai.Text + "' where mamay = N'" + txtmamay.Text + "' ";
+            Class.functions.runsql(sql);
+            Load_DataGridView(maPhongSelected);
+            resetvalues();
 
         }
 
@@ -152,7 +192,7 @@ namespace Project_CuoiKi.All_User_Control
 
             sql = "insert into May(MaMay, MaPhong, TrangThai) values(N'" + txtmamay.Text + "', N'" + txtmaphong.Text + "', N'" + txtTrangthai.Text + "')";
             Class.functions.runsql(sql);
-            Load_DataGridView();
+            Load_DataGridView(maPhongSelected);
             btnThem.Enabled = true;
             btnXoa.Enabled = true;
             btnSua.Enabled = true;
@@ -161,7 +201,24 @@ namespace Project_CuoiKi.All_User_Control
             txtmaphong.Enabled = false;
             resetvalues();
 
-           
+
+            callingForm.LoadTotalMachines();
+        }
+        private string selectedMaPhong;
+        private string selectedMaMay;
+        private void btnThuemay_Click(object sender, EventArgs e)
+        {
+            if (txtmaphong.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            Forms.ThueMay frmThueMay = new Forms.ThueMay(selectedMaPhong, selectedMaMay);
+            frmThueMay.frmDSMay = this;
+            frmThueMay.Show();
+
+
         }
     }
 }
